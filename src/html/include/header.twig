@@ -1,0 +1,83 @@
+<div class="header-wrap">
+  <header class="header header-sticky">
+    <div class="header-container container">
+      <div class="header-inner row align-items-center">
+        <div class="menu-toggle__wrap">
+          <button type="button" class="menu-toggle js__menu-toggle"></button>
+        </div>
+
+        <div class="header-search__view js-search-view">
+          <svg class="header-search__icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#search"></use>
+          </svg>
+        </div>
+
+        <div class="header-box">
+          <a href="https://wineexpress.ru/" class="header-logo">
+            <img src="/local/templates/static/img/logo.svg" alt="">
+          </a>
+
+          {% if page == "true" %}
+            <button class="header-btn__catalog btn-secondary btn js-switch-catalog" type="button">
+              <span class="btn-text">Каталог
+              <svg class="btn-arrow">
+                <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+              </svg></span>
+            </button>
+
+            <div class="header-menu__catalog">
+              {% include 'menu-catalog__list.twig' %}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="header-search col-lg-4 col-xl-5">
+          <form class="header-search__inner" action="#" method="get">
+            <div class="header-search__back">
+              <svg class="header-search__back-icon">
+                <use xlink:href="/local/templates/static/img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+
+            <input type="text" name="q" class="header-search__field form-control hide-placeholder" value="" autocomplete="off" placeholder="Введите поисковый запрос">
+
+            <button class="header-search__btn btn" type="submit">
+              <svg class="header-search__decor">
+                <use xlink:href="/local/templates/static/img/sprite.svg#search"></use>
+              </svg>
+            </button>
+
+            <button class="header-search__clear" type="button">
+              <svg class="header-search__clear__icon">
+                <use xlink:href="/local/templates/static/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <a class="header-call" href="tel:88005119090" rel="nofollow">
+          <svg class="header-call__icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#telephone"></use>
+          </svg>
+        </a>
+
+        <div class="header-elements">
+          {% include 'header-link.twig' %}
+        </div>
+
+        <a href="#" class="header-basket">
+          <div class="header-basket__count" data-basket-amount="12">
+            <svg class="header-basket__icon">
+              <use xlink:href="/local/templates/static/img/sprite.svg#basket"></use>
+            </svg>
+          </div>
+          <span class="header-basket__text">Корзина</span>
+
+          <svg class="header-basket__gift">
+            <use xlink:href="/local/templates/static/img/sprite.svg#gift"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>

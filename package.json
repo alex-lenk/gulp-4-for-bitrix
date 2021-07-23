@@ -1,0 +1,54 @@
+{
+  "name": "gulp-for-bitrix",
+  "version": "1.0.0",
+  "description": "Gulp 4 runner for 1C-Bitrix",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AlexLenk.ru",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-lenk/alexlenk/gulp-for-bitrix.git"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "babel-loader": "latest",
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-newer": "latest",
+    "gulp-rigger": "latest",
+    "gulp-sass": "^4.1.1",
+    "gulp-sourcemaps": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-svgstore": "latest",
+    "gulp-terser": "latest",
+    "gulp-twig": "latest",
+    "gulp-uglify-es": "latest",
+    "gulp-imagemin": "latest",
+    "imagemin-pngquant": "latest",
+    "imagemin-mozjpeg": "latest",
+    "imagemin-zopfli": "latest",
+    "gulp-debug": "latest",
+    "sass": "latest",
+    "uglifyjs-webpack-plugin": "latest",
+    "webpack": "latest",
+    "webpack-stream": "latest",
+    "path": "latest"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "keywords": [
+    "gulp 4",
+    "bitrix",
+    "1C-Bitrix",
+    "Gulp Bitrix"
+  ]
+}

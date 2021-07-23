@@ -1,0 +1,35 @@
+<div class="top-panel">
+  <div class="top-panel-inner container">
+    <div class="top-panel-info js__dropdown">
+      <div class="top-panel-info__text js__dropdown-toggle">Интернет-витрина компании Alianta Group</div>
+
+      <div class="top-panel-info__tip dropdown-menu dropdown-menu__decor">
+        <div>
+          <img src="/local/templates/static/img/logo-alianta-red.svg" class="top-panel-info__tip-media" alt="Alianta group">
+        </div>
+        Наш сайт является информационной&nbsp;витриной, ознакамливающей с&nbsp;ассортиментом винотек Wine Express. Мы&nbsp;строго
+        соблюдаем Правила продажи товаров дистанционным способом, утвержденным Постановлением Правительства
+        РФ&nbsp;27.09.2007 №&nbsp;612.
+
+        <button class="top-panel-info__tip-close close-component js__dropdown-close" type="button">
+          <svg class="close-component__icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    {% include 'top-panel-clients.twig' %}
+
+    {% include 'top-panel-company.twig' %}
+
+    <div class="top-panel-phone">
+      <a href="tel:88005119090" rel="nofollow" class="top-panel-phone__nub">8 (800) 511 90 90</a>
+      <span>(с 10:00 до 19:00)</span>
+    </div>
+
+    <div class="top-panel-auth">
+      {% include 'top-panel-auth__inner.twig' %}
+    </div>
+  </div>
+</div>

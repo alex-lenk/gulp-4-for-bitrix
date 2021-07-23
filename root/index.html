@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta content="telephone=no" name="format-detection">
+  <title>Главная страница</title>
+  <meta name="description" content="">
+      <link rel="stylesheet" href="/local/templates/static/css/styles.css">
+    
+  <link rel="apple-touch-icon" sizes="180x180" href="/local/templates/static/favicon/apple-touch-icon.png?v=KmwLxA07Yo">
+  <link rel="icon" type="image/png" sizes="32x32" href="/local/templates/static/favicon/favicon-32x32.png?v=KmwLxA07Yo">
+  <link rel="icon" type="image/png" sizes="16x16" href="/local/templates/static/favicon/favicon-16x16.png?v=KmwLxA07Yo">
+  <link rel="manifest" href="/local/templates/static/favicon/manifest.json?v=1">
+  <link rel="mask-icon" href="/local/templates/static/favicon/safari-pinned-tab.svg?v=KmwLxA07Yo" color="#ff9522">
+  <link rel="shortcut icon" href="/local/templates/static/favicon/favicon.ico?v=KmwLxA07Yo">
+  <meta name="apple-mobile-web-app-title" content="WineExpress.ru">
+  <meta name="application-name" content="WineExpress.ru">
+  <meta name="msapplication-TileColor" content="#ff9522">
+  <meta name="msapplication-config" content="/local/templates/static/favicon/browserconfig.xml?v=KmwLxA07Yo">
+  <meta name="theme-color" content="#ff9522">
+</head>
+<body>
+<div class="top-panel">
+  <div class="top-panel-inner container">
+    <div class="top-panel-info js__dropdown">
+      <div class="top-panel-info__text js__dropdown-toggle">Интернет-витрина компании Alianta Group</div>
+
+      <div class="top-panel-info__tip dropdown-menu dropdown-menu__decor">
+        <div>
+          <img src="/local/templates/static/img/logo-alianta-red.svg" class="top-panel-info__tip-media" alt="Alianta group">
+        </div>
+        Наш сайт является информационной&nbsp;витриной, ознакамливающей с&nbsp;ассортиментом винотек Wine Express. Мы&nbsp;строго
+        соблюдаем Правила продажи товаров дистанционным способом, утвержденным Постановлением Правительства
+        РФ&nbsp;27.09.2007 №&nbsp;612.
+
+        <button class="top-panel-info__tip-close close-component js__dropdown-close" type="button">
+          <svg class="close-component__icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="top-panel-nav">
+  <div class="top-panel-nav__title">
+    <div class="top-panel-nav__text">Клиентам</div>
+    <svg class="top-panel-nav__icon">
+      <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+    </svg>
+  </div>
+
+  <ul class="top-panel-nav__list top-panel-nav__right list-unstyled">
+    <li class="top-panel-nav__item">
+      <a href="/brandshttps://wineexpress.ru/" class="top-panel-nav__link">Производители</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Доставка и оплата</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Частным клиентам</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Корпоративным клиентам</a>
+    </li>
+  </ul>
+</nav>
+
+    <nav class="top-panel-nav">
+  <div class="top-panel-nav__title">
+    <div class="top-panel-nav__text">О компании</div>
+    <svg class="top-panel-nav__icon">
+      <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+    </svg>
+  </div>
+
+  <ul class="top-panel-nav__list list-unstyled">
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">О нас</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Новости компании</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Наша команда</a>
+    </li>
+  </ul>
+</nav>
+
+    <div class="top-panel-phone">
+      <a href="tel:88005119090" rel="nofollow" class="top-panel-phone__nub">8 (800) 511 90 90</a>
+      <span>(с 10:00 до 19:00)</span>
+    </div>
+
+    <div class="top-panel-auth">
+          <div class="top-panel-auth__inner" data-bs-toggle="modal" data-bs-target="#authModal">
+        <svg class="top-panel-auth__icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#login"></use>
+        </svg>
+        <span>Войти</span>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="header-wrap">
+  <header class="header header-sticky">
+    <div class="header-container container">
+      <div class="header-inner row align-items-center">
+        <div class="menu-toggle__wrap">
+          <button type="button" class="menu-toggle js__menu-toggle"></button>
+        </div>
+
+        <div class="header-search__view js-search-view">
+          <svg class="header-search__icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#search"></use>
+          </svg>
+        </div>
+
+        <div class="header-box">
+          <a href="https://wineexpress.ru/" class="header-logo">
+            <img src="/local/templates/static/img/logo.svg" alt="">
+          </a>
+
+                  </div>
+
+        <div class="header-search col-lg-4 col-xl-5">
+          <form class="header-search__inner" action="#" method="get">
+            <div class="header-search__back">
+              <svg class="header-search__back-icon">
+                <use xlink:href="/local/templates/static/img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+
+            <input type="text" name="q" class="header-search__field form-control hide-placeholder" value="" autocomplete="off" placeholder="Введите поисковый запрос">
+
+            <button class="header-search__btn btn" type="submit">
+              <svg class="header-search__decor">
+                <use xlink:href="/local/templates/static/img/sprite.svg#search"></use>
+              </svg>
+            </button>
+
+            <button class="header-search__clear" type="button">
+              <svg class="header-search__clear__icon">
+                <use xlink:href="/local/templates/static/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <a class="header-call" href="tel:88005119090" rel="nofollow">
+          <svg class="header-call__icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#telephone"></use>
+          </svg>
+        </a>
+
+        <div class="header-elements">
+          <a href="#" class="header-elements__item header-stores">
+    <svg class="header-elements__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#pin-stores"></use>
+    </svg>
+    Винотеки
+</a>
+
+<a href="#" class="header-elements__item header-event">
+    <svg class="header-elements__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#event"></use>
+    </svg>
+    Мероприятия
+</a>
+        </div>
+
+        <a href="#" class="header-basket">
+          <div class="header-basket__count" data-basket-amount="12">
+            <svg class="header-basket__icon">
+              <use xlink:href="/local/templates/static/img/sprite.svg#basket"></use>
+            </svg>
+          </div>
+          <span class="header-basket__text">Корзина</span>
+
+          <svg class="header-basket__gift">
+            <use xlink:href="/local/templates/static/img/sprite.svg#gift"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+
+
+<div class="container">
+  <div class="section-page home-head">
+    <div class="row row-m">
+      <aside class="menu-catalog col-lg-4 col-xxl-3">
+        <ul class="menu-catalog__list list-unstyled">
+  <li class="menu-catalog__item">
+    <a href="#" class="menu-catalog__inner">
+      <svg class="menu-catalog__icon menu-catalog__icon--action">
+        <use xlink:href="/local/templates/static/img/sprite.svg#hot-sale"></use>
+      </svg>
+      <div>
+        <div class="menu-catalog__title menu-catalog__title--action">Скидки и Акции</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#wine"></use>
+      </svg>
+      <div>
+        <a href="#" class="menu-catalog__title">Вино</a>
+
+        <div class="menu-catalog__text">
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Красное</a>
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Белое</a>
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Розовое</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#sparkling-wine"></use>
+      </svg>
+      <div>
+        <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__title">Игристое, шампанское</a>
+
+        <div class="menu-catalog__text">
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Красное</a>
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Белое</a>
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Розовое</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#alcohol"></use>
+      </svg>
+
+      <div>
+        <a href="#" class="menu-catalog__title">Крепкий алкоголь</a>
+
+        <div class="menu-catalog__text">
+          <a href="#" class="menu-catalog__link">Виски</a>
+          <a href="#" class="menu-catalog__link">Коньяк</a>
+          <a href="#" class="menu-catalog__link">Граппа</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#delicacies"></use>
+      </svg>
+
+      <div>
+        <a href="#" class="menu-catalog__title">Деликатесы</a>
+
+        <div class="menu-catalog__text">
+          <a href="#" class="menu-catalog__link">Сыр</a>
+          <a href="#" class="menu-catalog__link">Колбасы</a>
+          <a href="#" class="menu-catalog__link">Закуски</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#water"></use>
+      </svg>
+
+      <div>
+        <a href="#" class="menu-catalog__title">Вода</a>
+      </div>
+    </div>
+  </li>
+</ul>
+      </aside>
+
+      <div class="home-head__section col-lg-8 col-xxl-9">
+        <div class="home-slider">
+          <div class="home-slider__inner">
+            <div class="home-slider__list">
+              <div>
+                <a href="https://wineexpress.ru/">
+                  <picture>
+                    <source srcset="/local/templates/static/img/example/main-m-00.jpg" media="(max-width: 767px)">
+                    <img data-lazy="/local/templates/static/img/example/main-00.jpg" class="home-slider__media" alt="Planeta">
+                  </picture>
+                </a>
+              </div>
+              <div>
+                <a href="https://wineexpress.ru/">
+                  <picture>
+                    <source srcset="/local/templates/static/img/example/main-m-01.jpg" media="(max-width: 767px)">
+                    <img data-lazy="/local/templates/static/img/example/main-02.jpg" class="home-slider__media" alt="Planeta">
+                  </picture>
+                </a>
+              </div>
+              <div>
+                <a href="https://wineexpress.ru/">
+                  <picture>
+                    <source srcset="/local/templates/static/img/example/main-m-03.jpg" media="(max-width: 767px)">
+                    <img data-lazy="/local/templates/static/img/example/main-03.jpg" class="home-slider__media" alt="Planeta">
+                  </picture>
+                </a>
+              </div>
+              <div>
+                <a href="https://wineexpress.ru/">
+                  <picture>
+                    <source srcset="/local/templates/static/img/example/main-m-04.jpg" media="(max-width: 767px)">
+                    <img data-lazy="/local/templates/static/img/example/main-01.jpg" class="home-slider__media" alt="Planeta">
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-card">
+          <div class="home-card__quiz home-card__box">
+            <a href="https://wineexpress.ru/quiz/" class="home-card__inner">
+              <div class="home-card__text">
+                С&nbsp;кем из&nbsp;известных литераторов вы&nbsp;бы&nbsp;выпили и&nbsp;что?
+              </div>
+
+              <div class="home-card__more">
+                <span class="home-card__label">Пройти опрос</span>
+                <svg class="home-card__arrow">
+                  <use xlink:href="/local/templates/static/img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div class="home-card__second home-card__box">
+            <a href="https://wineexpress.ru/brands/warners-distillery/warners/" class="home-card__inner">
+              <div class="home-card__text">
+                Настоящий фермерский джин&nbsp;Warner’s
+              </div>
+
+              <div class="home-card__more">
+                <span class="home-card__label">Подробнее</span>
+                <svg class="home-card__arrow">
+                  <use xlink:href="/local/templates/static/img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="dish-menu">
+      <ul class="dish-menu-list row list-unstyled">
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К мясу</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К рыбе</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К пицце</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К птице</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К устрицам</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К дичи</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="https://wineexpress.ru/" class="footer-logo">
+        <img src="local/templates/static/img/logo-white.svg" alt="">
+      </a>
+
+      <form class="footer-subscription" method="POST" action="#" name="subscribtion_form">
+        <label class="footer-subscription__text" for="footer-subscription__field">Узнавай первым о скидках:</label>
+
+        <div class="footer-subscription__box">
+          <input type="email" name="email" id="footer-subscription__field" class="footer-subscription__field form-control hide-placeholder" placeholder="Введите ваш e-mail" required>
+          <button class="footer-subscription__btn btn-secondary btn" type="submit">
+            Подписаться
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer-nav">
+      <div class="footer-nav__box">
+        <div class="footer-nav__title js__footer-toggle">
+          Каталог
+          <svg class="footer-nav__title-icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+          </svg>
+        </div>
+
+        <ul class="footer-menu list-unstyled">
+          <li class="footer-menu__item">
+            <a href="https://wineexpress.ru/catalog/wine/" class="footer-menu__link">Тихое вино</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="https://wineexpress.ru/catalog/wine/" class="footer-menu__link">Игристое, шампанское</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="https://wineexpress.ru/catalog/wine/" class="footer-menu__link">Крепкий алкоголь</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="https://wineexpress.ru/catalog/wine/" class="footer-menu__link">Стекло и аксессуары</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="https://wineexpress.ru/catalog/wine/" class="footer-menu__link">Деликатесы</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="https://wineexpress.ru/catalog/wine/" class="footer-menu__link">Сеты</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="https://wineexpress.ru/catalog/wine/" class="footer-menu__link">Вода</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-nav__box">
+        <div class="footer-nav__title js__footer-toggle">
+          Клиентам
+          <svg class="footer-nav__title-icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+          </svg>
+        </div>
+
+        <ul class="footer-menu list-unstyled">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Скидки и Акции</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Винотеки</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Мероприятия</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Частным клиентам</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Корпоративным клиентам</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Условия доставки</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="/brandshttps://wineexpress.ru/" class="footer-menu__link">Производители</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-nav__box">
+        <div class="footer-nav__title js__footer-toggle">
+          О компании
+          <svg class="footer-nav__title-icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+          </svg>
+        </div>
+
+        <ul class="footer-menu list-unstyled">
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">О нас</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Новости</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="#" class="footer-menu__link">Команда</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-nav__box">
+        <div class="footer-nav__title js__footer-toggle">
+          Контакты
+          <svg class="footer-nav__title-icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+          </svg>
+        </div>
+
+        <ul class="footer-menu list-unstyled">
+          <li class="footer-menu__item">
+            г. Москва, ул. Поклонная, д. 3, корп. E1
+          </li>
+          <li class="footer-menu__item">
+            Тел. <a href="tel:88005119090" class="footer-menu__link" rel="nofollow">8 (800) 511-90-90</a>
+          </li>
+          <li class="footer-menu__item">
+            Факс +7 (495) 980 1074
+          </li>
+          <li class="footer-menu__item">
+            <a href="mailto:info@wineexpress.ru" class="footer-menu__link" rel="nofollow">Info@wineexpress.ru</a>
+          </li>
+        </ul>
+
+        <div class="social-footer">
+          <ul class="social-footer__list">
+            <li class="social-footer__item">
+              <a href="https://www.instagram.com/wineexpress.ru/" rel="nofollow" target="_blank">
+                <svg class="social-footer__icon">
+                  <use xlink:href="/local/templates/static/img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer__item">
+              <a href="https://www.facebook.com/wineexpresss/" rel="nofollow" target="_blank">
+                <svg class="social-footer__icon">
+                  <use xlink:href="/local/templates/static/img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer__item">
+              <a href="https://zen.yandex.ru/id/5e342a964e72656569a2ed07?utm_source=wefooter" rel="nofollow" target="_blank">
+                <svg class="social-footer__icon">
+                  <use xlink:href="/local/templates/static/img/sprite.svg#zen"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Продажа спиртных напитков несовершеннолетним лицам запрещена.</p>
+
+      <p>
+        Мы&nbsp;строго соблюдаем Правила продажи товаров дистанционным способом, утвержденным Постановлением
+        Правительства РФ&nbsp;от&nbsp;27.09.2007 №&nbsp;612. Наш сайт является информационной витриной,
+        ознакамливающей с&nbsp;ассортиментом винотек Wine Express.
+        В&nbsp;соответствии с&nbsp;рекомендациями ФС&nbsp;РАР уведомляем: алкогольная продукция может быть приобретена
+        непосредственно в&nbsp;магазинах WineExpress.
+      </p>
+
+      <p class="footer-bottom__text-lg">Чрезмерное потребление алкоголя вредит вашему здоровью.</p>
+
+      <p>
+        ООО «Вино он-лайн АГ», ИНН:5024064362, лицензия №&nbsp;77РПА0013701 от&nbsp;26&nbsp;января 2018г.&nbsp;101000,
+        г.Москва, Чистопрудный Бульвар, 12&nbsp;к4, с&nbsp;10:00&nbsp;до&nbsp;23:00 ежедневно.
+        Все информационные материалы и&nbsp;цены, размещенные на&nbsp;сайте, не&nbsp;является публичной офертой,
+        определяемой положениями Статьи 437 Гражданского кодекса РФ.
+        По&nbsp;всем вопросам приобретения продукции в&nbsp;наших винотеках можно обратиться к&nbsp;личному
+        консультанту-сомелье по&nbsp;телефону: <span class="text-nowrap">8-800-511-90-90</span>
+      </p>
+    </div>
+
+    <div class="footer-copy">
+      ©1993-2021 Wine Express by Alianta Group
+    </div>
+  </div>
+</footer>
+
+
+<div class="darkening-layer"></div>
+
+<div class="nav-bar">
+  <div class="nav-bar-content">
+    <div class="nav-bar-panel">
+      <a href="#" class="header-elements__item header-stores">
+    <svg class="header-elements__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#pin-stores"></use>
+    </svg>
+    Винотеки
+</a>
+
+<a href="#" class="header-elements__item header-event">
+    <svg class="header-elements__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#event"></use>
+    </svg>
+    Мероприятия
+</a>
+    </div>
+
+    <div class="nav-bar-menu">
+    <ul class="menu-catalog__list list-unstyled">
+  <li class="menu-catalog__item">
+    <a href="#" class="menu-catalog__inner">
+      <svg class="menu-catalog__icon menu-catalog__icon--action">
+        <use xlink:href="/local/templates/static/img/sprite.svg#hot-sale"></use>
+      </svg>
+      <div>
+        <div class="menu-catalog__title menu-catalog__title--action">Скидки и Акции</div>
+      </div>
+    </a>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#wine"></use>
+      </svg>
+      <div>
+        <a href="#" class="menu-catalog__title">Вино</a>
+
+        <div class="menu-catalog__text">
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Красное</a>
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Белое</a>
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Розовое</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#sparkling-wine"></use>
+      </svg>
+      <div>
+        <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__title">Игристое, шампанское</a>
+
+        <div class="menu-catalog__text">
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Красное</a>
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Белое</a>
+          <a href="https://wineexpress.ru/catalog/wine/" class="menu-catalog__link">Розовое</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#alcohol"></use>
+      </svg>
+
+      <div>
+        <a href="#" class="menu-catalog__title">Крепкий алкоголь</a>
+
+        <div class="menu-catalog__text">
+          <a href="#" class="menu-catalog__link">Виски</a>
+          <a href="#" class="menu-catalog__link">Коньяк</a>
+          <a href="#" class="menu-catalog__link">Граппа</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#delicacies"></use>
+      </svg>
+
+      <div>
+        <a href="#" class="menu-catalog__title">Деликатесы</a>
+
+        <div class="menu-catalog__text">
+          <a href="#" class="menu-catalog__link">Сыр</a>
+          <a href="#" class="menu-catalog__link">Колбасы</a>
+          <a href="#" class="menu-catalog__link">Закуски</a>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <li class="menu-catalog__item">
+    <div class="menu-catalog__inner">
+      <svg class="menu-catalog__icon">
+        <use xlink:href="/local/templates/static/img/sprite.svg#water"></use>
+      </svg>
+
+      <div>
+        <a href="#" class="menu-catalog__title">Вода</a>
+      </div>
+    </div>
+  </li>
+</ul>
+    </div>
+
+    <nav class="top-panel-nav">
+  <div class="top-panel-nav__title">
+    <div class="top-panel-nav__text">Клиентам</div>
+    <svg class="top-panel-nav__icon">
+      <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+    </svg>
+  </div>
+
+  <ul class="top-panel-nav__list top-panel-nav__right list-unstyled">
+    <li class="top-panel-nav__item">
+      <a href="/brandshttps://wineexpress.ru/" class="top-panel-nav__link">Производители</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Доставка и оплата</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Частным клиентам</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Корпоративным клиентам</a>
+    </li>
+  </ul>
+</nav>
+
+    <nav class="top-panel-nav">
+  <div class="top-panel-nav__title">
+    <div class="top-panel-nav__text">О компании</div>
+    <svg class="top-panel-nav__icon">
+      <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+    </svg>
+  </div>
+
+  <ul class="top-panel-nav__list list-unstyled">
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">О нас</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Новости компании</a>
+    </li>
+    <li class="top-panel-nav__item">
+      <a href="#" class="top-panel-nav__link">Наша команда</a>
+    </li>
+  </ul>
+</nav>
+
+    <nav class="top-panel-nav">
+      <div class="top-panel-nav__title">Контакты</div>
+
+      <ul class="top-panel-nav__list list-unstyled">
+        <li class="top-panel-nav__item">
+          Тел <a href="tel:88005119090" class="top-panel-nav__link" rel="nofollow">8 (800) 511 90 90</a>
+        </li>
+        <li class="top-panel-nav__item">
+          Факс <a href="tel:+74959801074" class="top-panel-nav__link" rel="nofollow">+7 (495) 980-10-74</a>
+        </li>
+        <li class="top-panel-nav__item">
+          <a href="mailto:sale@wineexpress.ru" class="top-panel-nav__link" rel="nofollow">Sale@wineexpress.ru</a>
+        </li>
+        <li class="top-panel-nav__item top-panel-nav__social">
+          <a class="top-panel-nav__link" rel="nofollow" target="_blank" href="https://www.instagram.com/wineexpress.ru/">
+            <svg class="top-panel-nav__social-icon">
+              <use xlink:href="/local/templates/static/img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+
+          <a class="top-panel-nav__link" rel="nofollow" target="_blank" href="https://www.facebook.com/wineexpresss/">
+            <svg class="top-panel-nav__social-icon">
+              <use xlink:href="/local/templates/static/img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+
+          <a class="top-panel-nav__link" rel="nofollow" target="_blank" href="https://zen.yandex.ru/id/5e342a964e72656569a2ed07?utm_source=wefooter">
+            <svg class="top-panel-nav__social-icon">
+              <use xlink:href="/local/templates/static/img/sprite.svg#zen"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+  <script src="/local/templates/static/js/vendor.js?ver=1.0"></script>
+<script src="/local/templates/static/js/scripts.js?ver=1.0"></script>
+
+</body>
+</html>

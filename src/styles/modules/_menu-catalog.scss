@@ -1,0 +1,117 @@
+.menu-catalog__inner {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:hover .menu-catalog__title--action {
+    border-bottom-color: $redColor;
+  }
+
+  &:active .menu-catalog__title--action  {
+    color: $blackColor;
+    border-bottom-color: transparent;
+  }
+}
+
+.menu-catalog__link {
+  padding-right: 4px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out;
+
+  &:hover {
+    color: $blackColor;
+    border-bottom-color: $blackColor;
+  }
+
+  &:active  {
+    color: $primaryColor;
+    border-bottom-color: transparent;
+  }
+}
+
+.menu-catalog__icon {
+  fill: var(--menuCatalogIcon, $primaryColor);
+  transition: fill .2s ease-in-out;
+}
+
+.menu-catalog__title {
+  line-height: 22px;
+  text-decoration: none;
+  color: var(--menuCatalogTitle, $blackColor);
+  border-bottom: 1px solid transparent;
+  transition: color .2s ease-in-out, border-color .2s ease-in-out;
+
+  &:not(.menu-catalog__title--action):hover {
+    color: $blackColor;
+    border-bottom-color: $blackColor;
+  }
+
+  &:not(.menu-catalog__title--action):active {
+    color: $primaryColor;
+    border-bottom-color: transparent;
+  }
+}
+
+.menu-catalog__icon--action {
+  --menuCatalogIcon: #C8003C;
+}
+
+.menu-catalog__title--action {
+  --menuCatalogTitle: #C8003C;
+}
+
+.menu-catalog__text {
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .menu-catalog__list {
+    padding: 32px 20px 32px 25px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba($shadow, .2);
+    border-radius: 16px;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .menu-catalog__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  .menu-catalog__title {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu-catalog__list {
+    padding-left: 16px;
+    padding-right: 8px;
+    padding-bottom: 33px;
+    margin-top: 32px;
+    margin-bottom: 21px;
+    border-bottom: 1px solid $borderColor;
+  }
+  .menu-catalog__item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+  .menu-catalog__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+  .menu-catalog__text {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .menu-catalog__list {
+    height: 100%;
+  }
+}

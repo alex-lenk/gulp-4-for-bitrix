@@ -1,0 +1,121 @@
+{% extends 'include/layout.twig' %}
+
+{% set title = "Главная страница" %}
+{% set online = "false" %}
+{% set page = "false" %}
+
+{% block topPanel %}{% include 'include/top-panel.twig' %}{% endblock %}
+
+{% block header %}{% include 'include/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="section-page home-head">
+    <div class="row row-m">
+      <aside class="menu-catalog col-lg-4 col-xxl-3">
+        {% include 'include/menu-catalog__list.twig' %}
+      </aside>
+
+      <div class="home-head__section col-lg-8 col-xxl-9">
+        <div class="home-slider">
+          <div class="home-slider__inner">
+            <div class="home-slider__list">
+              <div>
+                <a href="https://wineexpress.ru/">
+                  <picture>
+                    <source srcset="/local/templates/static/img/example/main-m-00.jpg" media="(max-width: 767px)">
+                    <img data-lazy="/local/templates/static/img/example/main-00.jpg" class="home-slider__media" alt="Planeta">
+                  </picture>
+                </a>
+              </div>
+              <div>
+                <a href="https://wineexpress.ru/">
+                  <picture>
+                    <source srcset="/local/templates/static/img/example/main-m-01.jpg" media="(max-width: 767px)">
+                    <img data-lazy="/local/templates/static/img/example/main-02.jpg" class="home-slider__media" alt="Planeta">
+                  </picture>
+                </a>
+              </div>
+              <div>
+                <a href="https://wineexpress.ru/">
+                  <picture>
+                    <source srcset="/local/templates/static/img/example/main-m-03.jpg" media="(max-width: 767px)">
+                    <img data-lazy="/local/templates/static/img/example/main-03.jpg" class="home-slider__media" alt="Planeta">
+                  </picture>
+                </a>
+              </div>
+              <div>
+                <a href="https://wineexpress.ru/">
+                  <picture>
+                    <source srcset="/local/templates/static/img/example/main-m-04.jpg" media="(max-width: 767px)">
+                    <img data-lazy="/local/templates/static/img/example/main-01.jpg" class="home-slider__media" alt="Planeta">
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-card">
+          <div class="home-card__quiz home-card__box">
+            <a href="https://wineexpress.ru/quiz/" class="home-card__inner">
+              <div class="home-card__text">
+                С&nbsp;кем из&nbsp;известных литераторов вы&nbsp;бы&nbsp;выпили и&nbsp;что?
+              </div>
+
+              <div class="home-card__more">
+                <span class="home-card__label">Пройти опрос</span>
+                <svg class="home-card__arrow">
+                  <use xlink:href="/local/templates/static/img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <div class="home-card__second home-card__box">
+            <a href="https://wineexpress.ru/brands/warners-distillery/warners/" class="home-card__inner">
+              <div class="home-card__text">
+                Настоящий фермерский джин&nbsp;Warner’s
+              </div>
+
+              <div class="home-card__more">
+                <span class="home-card__label">Подробнее</span>
+                <svg class="home-card__arrow">
+                  <use xlink:href="/local/templates/static/img/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="dish-menu">
+      <ul class="dish-menu-list row list-unstyled">
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К мясу</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К рыбе</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К пицце</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К птице</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К устрицам</a>
+        </li>
+        <li class="dish-menu-item col-lg-2 col-md-3">
+          <a href="#" class="dish-menu-link">К дичи</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}{% include 'include/footer.twig' %}{% endblock %}
+
+{% block mobileMenu %}{% include 'include/nav-bar.twig' %}{% endblock %}

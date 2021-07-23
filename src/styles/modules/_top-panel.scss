@@ -1,0 +1,339 @@
+.top-panel {
+  color: #fff;
+  font-size: 14px;
+  background-color: $lightText;
+}
+
+.top-panel-inner {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.top-panel-info {
+  position: relative;
+}
+
+.top-panel-info__text {
+  cursor: pointer;
+}
+
+.top-panel-info__tip {
+  width: 485px;
+  padding: 31px 24px 32px 32px;
+  color: $mainText;
+  font-size: 16px;
+  z-index: 12;
+
+  .close {
+    background-color: #fff;
+  }
+}
+
+.top-panel-info__tip-media {
+  width: 120px;
+  height: 35px;
+  margin-bottom: 9px;
+}
+
+
+.top-panel-nav__link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color .2s ease-in-out;
+
+  &:hover {
+    color: $mainText;
+    border-bottom-color: $mainText;
+  }
+
+  &:focus,
+  &:active {
+    color: $primaryColor;
+    border-bottom-color: transparent;
+  }
+}
+
+.top-panel-phone__nub {
+  padding-right: 5px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .2s ease-in-out;
+}
+
+.top-panel-auth__inner {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.top-panel-auth__toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-panel-auth__avatar {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  background-color: $mainText;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.top-panel-auth__arrow {
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+  position: relative;
+  top: 1px;
+  transform: rotate(90deg);
+}
+
+.top-panel-auth__name {
+  font-size: 16px;
+  font-weight: 600;
+  color: $blackColor;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+.top-panel-auth__link {
+  color: $mainText;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+.top-panel-auth__exit {
+  color: $lightText;
+  transition: color .2s ease-in-out;
+}
+
+.top-panel-nav__social {
+  padding-top: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.top-panel-nav__social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+  fill: $lightText;
+}
+
+.basket-auth__avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  line-height: 32px;
+}
+
+.basket-auth__avatar--arrow {
+  width: 12px;
+  height: 12px;
+  fill: $mainText;
+  top: -1px;
+}
+
+@media (min-width: 992px) {
+  .top-panel-auth__inner {
+    cursor: pointer;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: $primaryColor;
+
+      .top-panel-auth__icon {
+        fill: $primaryColor;
+      }
+    }
+  }
+  .top-panel-auth__icon {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    transition: fill .2s ease-in-out;
+  }
+  .top-panel-auth__dropdown {
+    min-width: 168px;
+    right: -6px;
+    top: 27px;
+    z-index: 14;
+    padding: 15px 22px;
+  }
+  .top-panel-auth__menu {
+    font-size: 16px;
+    margin-bottom: 7px;
+    margin-top: 13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+  }
+  .top-panel-auth__item:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  .top-panel-auth__name {
+    margin-bottom: 13px;
+  }
+  .top-panel-nav {
+    position: relative;
+
+    &:hover .top-panel-nav__list {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  .top-panel-nav__title {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .top-panel-nav__text {
+    margin-right: 6px;
+  }
+
+  .top-panel-nav__icon {
+    width: 10px;
+    height: 10px;
+    fill: #fff;
+    position: relative;
+    top: 1px;
+    transform: rotate(90deg);
+  }
+
+  .top-panel-nav__list {
+    min-width: 256px;
+    padding: 15px 22px;
+    background-color: #fff;
+    border: 2px solid $greyLight;
+    box-shadow: 0 15px 30px rgba($shadow, .1);
+    border-radius: 16px;
+    position: absolute;
+    top: 33px;
+    left: -9px;
+    z-index: 12;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease-in-out;
+  }
+
+  .top-panel-nav__right {
+    right: -8px;
+    left: auto;
+  }
+
+  .top-panel-nav__item {
+    font-size: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+  .top-panel-nav__link {
+    display: inline-block;
+  }
+
+  .basket-auth__dropdown {
+    top: 59px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .top-panel-nav {
+    margin-left: 40px;
+  }
+  .top-panel-phone {
+    margin-left: auto;
+  }
+  .top-panel-auth {
+    min-width: 66px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .top-panel {
+    display: none;
+  }
+  .top-panel-auth {
+    padding: 0 16px 21px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid $borderColor;
+  }
+  .top-panel-auth__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    fill: #707090;
+  }
+  .top-panel-auth__toggle {
+    display: none;
+  }
+  .top-panel-auth__dropdown {
+    min-width: auto;
+    padding: 0;
+    display: block;
+    position: static;
+  }
+  .top-panel-auth__name {
+    line-height: 27px;
+    margin-bottom: 17px;
+    display: inline-block;
+  }
+  .top-panel-auth__menu {
+    padding-left: 18px;
+    margin-bottom: 15px;
+  }
+  .top-panel-auth__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .top-panel-auth__exit {
+    margin-left: 18px;
+  }
+  .top-panel-nav__icon {
+    display: none;
+  }
+  .top-panel-nav {
+    padding: 0 0 25px 16px;
+    margin-bottom: 25px;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $borderColor;
+    }
+  }
+  .top-panel-nav__title {
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 16px;
+    color: $blackColor;
+  }
+  .top-panel-nav__list {
+    padding-left: 16px;
+  }
+  .top-panel-nav__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .top-panel-inner {
+    justify-content: space-between;
+  }
+}

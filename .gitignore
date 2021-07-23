@@ -1,0 +1,17 @@
+/.git/*
+/local/templates/static/css/maps/**/*.map
+/node_modules/
+.idea
+/.htaccess
+/*.htaccess
+/.htaccess*
+/*.log
+/*.txt
+/sitemap*.xml
+.DS_Store
+/yandex_*
+*.iml
+bower_components
+/dist
+/build
+package-lock.json

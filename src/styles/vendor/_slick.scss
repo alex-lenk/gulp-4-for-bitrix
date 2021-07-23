@@ -1,0 +1,259 @@
+/* Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: hand;
+  }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.slick-slide {
+  float: left;
+  min-height: 1px;
+
+  [dir="rtl"] & {
+    float: right;
+  }
+
+  &.slick-loading img {
+    display: none;
+  }
+
+  display: none;
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+
+  button {
+    border: 0;
+    background: transparent;
+    display: block;
+    outline: none;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .slick-active {
+    background-color: $lightText;
+  }
+}
+
+.slick-dotted__item {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  transition: border-color .3s, background-color .3s;
+
+  &:not(.slick-active):hover {
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+  }
+}
+
+.slick-prev {
+  transform: rotate(180deg);
+}
+
+.slick-arrow {
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  position: absolute;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: #fff;
+  color: transparent;
+  top: 50%;
+  padding: 0;
+  outline: 0;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(#38436D, .25);
+  transition: background-color .2s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.slick-disabled {
+    opacity: .4;
+  }
+}
+
+.slick-arrow__icon {
+  fill: $lightText;
+  position: absolute;
+  transition: fill .2s ease-in-out;
+}
+
+@media (min-width: 576px) {
+  .slick-dotted__item {
+    height: 12px;
+    width: 12px;
+  }
+
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+  }
+  .slick-prev {
+    left: -20px;
+  }
+  .slick-next {
+    right: -20px;
+  }
+  .slick-arrow__icon {
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    left: 11px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slick-arrow:hover {
+    background-color: $primaryColor;
+
+    .slick-arrow__icon {
+      fill: #fff;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .slick-arrow:active {
+    background-color: $primaryColor;
+
+    .slick-arrow__icon {
+      fill: #fff;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .slick-dotted__item {
+    height: 9px;
+    width: 9px;
+  }
+  .slick-arrow {
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+  }
+  .slick-prev {
+    left: -16px;
+  }
+  .slick-next {
+    right: -16px;
+  }
+  .slick-arrow__icon {
+    width: 12px;
+    height: 12px;
+    left: 10px;
+    top: 10px;
+  }
+}

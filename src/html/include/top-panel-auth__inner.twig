@@ -1,0 +1,32 @@
+{% if online == "true" %}
+    <div class="top-panel-auth__inner js__dropdown">
+        <div class="top-panel-auth__toggle js__dropdown-toggle">
+            <span class="top-panel-auth__avatar">N</span>
+            <svg class="top-panel-auth__arrow">
+                <use xlink:href="/local/templates/static/img/sprite.svg#arrow-short"></use>
+            </svg>
+        </div>
+
+        <div class="top-panel-auth__dropdown dropdown-menu dropdown-menu__decor">
+            <a href="#" class="top-panel-auth__name">ALex Lenk</a>
+
+            <ul class="top-panel-auth__menu list-unstyled">
+                <li class="top-panel-auth__item">
+                    <a href="#" class="top-panel-auth__link">Мои заказы</a>
+                </li>
+                <li class="top-panel-auth__item">
+                    <a href="#" class="top-panel-auth__link">Мой профиль</a>
+                </li>
+            </ul>
+
+            <a href="https://wineexpress.ru/" class="top-panel-auth__exit">Выйти</a>
+        </div>
+    </div>
+{% else %}
+    <div class="top-panel-auth__inner" data-bs-toggle="modal" data-bs-target="#authModal">
+        <svg class="top-panel-auth__icon">
+            <use xlink:href="/local/templates/static/img/sprite.svg#login"></use>
+        </svg>
+        <span>Войти</span>
+    </div>
+{% endif %}

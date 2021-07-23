@@ -1,0 +1,60 @@
+.dish-menu {
+  margin-top: 32px;
+}
+
+.dish-menu-link {
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba($shadow, .2);
+  font-weight: 600;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  .dish-menu-link {
+    padding: 37px 15px;
+    border-radius: 12px;
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 15px 30px rgba(61,61,78,.1);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .dish-menu {
+    padding-bottom: 6px;
+  }
+
+  .dish-menu-list {
+    background-color: $greyLight;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 16px 8px;
+  }
+  .dish-menu-item {
+    width: 128px;
+  }
+  .dish-menu-link {
+    height: 68px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .dish-menu-item {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .dish-menu-item {
+    margin-top: 16px;
+  }
+}
